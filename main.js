@@ -1,5 +1,5 @@
 
-var canvas = new fabric.canvas('myCanvas');
+var canvas = new fabric.Canvas('myCanvas');
  block_y=1;
  block_x=1;
 
@@ -17,7 +17,7 @@ fabric.Image.fromURL(get_image, function(Img){
 	block_image_object.scaleToHeight(block_image_height);
 	block_image_object.set({
 		top:block_y,
-		top:block_x
+		left:block_x
 	});
 	canvas.add(block_image_object);
 })};
@@ -37,7 +37,7 @@ console.log(keyPressed);
 	if(keyPressed == '71')
 	{
 		block_x = 200;
-		new_image('rr.jpg');
+		new_image('gr.png');
 		console.log("g keypressed");
 	}
 	if(keyPressed == '89')
